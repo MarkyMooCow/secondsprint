@@ -1,3 +1,69 @@
+/* Styling for login screen */
+
+.SignInBox {
+  position: absolute;
+  height: 50vh;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 63%, 57%, 0.6);
+  border-radius: 5px;
+  color: white;
+}
+
+.SignInForm {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% min-content min-content min-content;
+  grid-template-areas:
+    "header header"
+    "username_label username_input"
+    "password_label password_input"
+    "submit_button submit_button";
+}
+
+.SignInForm > h1 {
+  grid-area: header;
+  margin: 10px;
+}
+
+.SignInForm > label[for="username"] {
+  grid-area: username_label;
+  margin: 10px;
+}
+
+.SignInForm > label[for="password"] {
+  grid-area: password_label;
+  margin: 10px;
+}
+
+.SignInForm > input[name="username"] {
+  grid-area: username_input;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.SignInForm > input[name="password"] {
+  grid-area: password_input;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.SignInForm > button {
+  grid-area: submit_button;
+  border-radius: 5px;
+
+/* login screen styling ends here */
+
+
+
 #login {
   position: absolute;
 
@@ -121,3 +187,102 @@
   
   left: 300px;
 }
+
+
+/* css positioning router texts to the center */
+
+#myhead {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 600px;
+
+    right: 500px;
+  
+    top: 100px;
+  
+    background: #d64d4d;
+  }
+
+#myHead2 {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 600px;
+
+    right: 500px;
+  
+    top: 100px;
+  
+    background: #d64d4d;
+  }
+
+#myHead3 {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 600px;
+
+    right: 500px;
+  
+    top: 100px;
+  
+    background: #d64d4d;
+  }
+
+#myHead4 {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 600px;
+
+    right: 500px;
+  
+    top: 100px;
+  
+    background: #d64d4d;
+  }
+
+#myHead5 {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 600px;
+
+    right: 500px;
+  
+    top: 100px;
+  
+    background: #d64d4d;
+  }
+
+ #Text2 {
+    position: absolute;
+  
+    width: 434px;
+  
+    height: 1080px;
+  
+    left: 300px;
+
+    right: 400px;
+  
+    top: 200px;
+  
+    background: #d64d4d;
+  }
