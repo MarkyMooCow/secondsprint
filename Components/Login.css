@@ -59,6 +59,7 @@
 .SignInForm > button {
   grid-area: submit_button;
   border-radius: 5px;
+}
 
 /* login screen styling ends here */
 
