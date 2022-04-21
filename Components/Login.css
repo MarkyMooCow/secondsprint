@@ -63,7 +63,6 @@
 /* login screen styling ends here */
 
 
-
 #login {
   position: absolute;
 
@@ -85,23 +84,23 @@
 
   width: 434px;
 
-  height: 700px;
+  height: 600px;
 
   left: 1000px;
 
-  top: 10px;
+  top: 20px;
 
-  background: #cacaca;
+  background: #ffffff;
 
   border-style: solid;
 
-  border-width: 2px;
+  border-width: 5px;
 }
 
 #converse {
   position: absolute;
 
-  width: 450px;
+  width: 550px;
 
   height: 600px;
 
@@ -109,7 +108,7 @@
 
   top: 20px;
 
-  background: #cacaca;
+  background: #ffffff;
 
   border-radius: 5px;
 
@@ -119,15 +118,17 @@
 }
 
 .convo {
-  background: #d64d4d;
+  background: #cacaca;
 
   width: 300px;
 
   font-size: 20px;
 
-  height: 50px;
+  height: 40px;
 
-  left: 300px;
+  left: 400px;
+
+  border-radius: 5px;
 }
 
 .recMessage {
@@ -135,24 +136,36 @@
 
   width: 140px;
 
-  height: 25px;
+  height: 55px;
 
   left: 295px;
 
+  font-size: 20px;
+
   top: 175px;
 
-  background: #a32323;
+  background: #c73333;
 
   border-radius: 7.5px;
 }
 .sentMessage {
   width: 200px;
 
-  height: 25px;
+  height: 55px;
+
+  font-size: 20px;
 
   background: #61dafb;
 
   border-radius: 7.5px;
+}
+
+#messagebar {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  height: 20px;
+  width: 300px;
 }
 
 #notifs {
@@ -186,102 +199,3 @@
 
   border-radius: 5px;
 }
-
-
-/* css positioning router texts to the center */
-
-#myhead {
-    position: absolute;
-  
-    width: 434px;
-  
-    height: 1080px;
-  
-    left: 600px;
-
-    right: 500px;
-  
-    top: 100px;
-  
-    background: #d64d4d;
-  }
-
-#myHead2 {
-    position: absolute;
-  
-    width: 434px;
-  
-    height: 1080px;
-  
-    left: 600px;
-
-    right: 500px;
-  
-    top: 100px;
-  
-    background: #d64d4d;
-  }
-
-#myHead3 {
-    position: absolute;
-  
-    width: 434px;
-  
-    height: 1080px;
-  
-    left: 600px;
-
-    right: 500px;
-  
-    top: 100px;
-  
-    background: #d64d4d;
-  }
-
-#myHead4 {
-    position: absolute;
-  
-    width: 434px;
-  
-    height: 1080px;
-  
-    left: 600px;
-
-    right: 500px;
-  
-    top: 100px;
-  
-    background: #d64d4d;
-  }
-
-#myHead5 {
-    position: absolute;
-  
-    width: 434px;
-  
-    height: 1080px;
-  
-    left: 600px;
-
-    right: 500px;
-  
-    top: 100px;
-  
-    background: #d64d4d;
-  }
-
- #Text2 {
-    position: absolute;
-  
-    width: 434px;
-  
-    height: 1080px;
-  
-    left: 300px;
-
-    right: 400px;
-  
-    top: 200px;
-  
-    background: #d64d4d;
-  }
