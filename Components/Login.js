@@ -14,8 +14,12 @@ function Login() {
 
   let navigate = useNavigate();
   const routeChange = () => {
-    let path = `../home`;
-    navigate(path);
+    if (username === "" || password === "") {
+      alert("cannot leave any field blank", "error");
+    } else {
+      let path = `../home`;
+      navigate(path);
+    }
   };
 
   return (
