@@ -74,3 +74,38 @@ export default Login;
 
   background-color:rgba(255,0,0,0.3);
 }
+//*Grid Box
+.item1 {
+  grid-area: Banner;
+  background-image: url("./logo512.png");
+}
+.item2 {
+  grid-area: Bio;
+}
+.item3 {
+  grid-area: Favorite;
+}
+.item4 {
+  grid-area: Post;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "Banner Banner"
+    "Banner Banner"
+    "Bio Post"
+    "Favorite Post"
+    "Favorite Post";
+  gap: 10px;
+  background-color: #c72828;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(243, 241, 241, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
