@@ -261,7 +261,7 @@
 
   background-color:rgba(255,0,0,0.3);
 }
-//*Grid Box
+/* styling for grid box */
 .item1 {
   grid-area: Banner;
   background-image: url("./logo512.png");
