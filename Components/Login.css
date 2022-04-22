@@ -1,5 +1,5 @@
-/* Styling for login screen */
-
+/* Sign In page specific styling starts here */
+/* the box it is in */
 .SignInBox {
   position: absolute;
   height: 50vh;
@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: hsl(0, 63%, 57%, 0.6);
+  background-color: rgba(214, 76, 76, 0.6);
   border-radius: 5px;
   color: white;
 }
@@ -31,17 +31,19 @@
   grid-area: header;
   margin: 10px;
 }
-
+/* styling for password form label */
 .SignInForm > label[for="username"] {
   grid-area: username_label;
   margin: 10px;
 }
 
+/* styling for password form label */
 .SignInForm > label[for="password"] {
   grid-area: password_label;
   margin: 10px;
 }
 
+/* styling for username input form */
 .SignInForm > input[name="username"] {
   grid-area: username_input;
   width: 80%;
@@ -49,6 +51,7 @@
   margin: 10px;
 }
 
+/* styling for password input form */
 .SignInForm > input[name="password"] {
   grid-area: password_input;
   width: 80%;
@@ -56,12 +59,12 @@
   margin: 10px;
 }
 
+/* styling for submit button */
 .SignInForm > button {
   grid-area: submit_button;
   border-radius: 5px;
 }
-
-/* login screen styling ends here */
+/* Sign In page specific styling ends here */
 
 
 #login {
@@ -80,77 +83,11 @@
   background: #d64d4d;
 }
 
-#messages {
-  position: absolute;
-
-  width: 434px;
-
-  height: 600px;
-
-  left: 1000px;
-
-  top: 20px;
-
-  background: #ffffff;
-
-  border-style: solid;
-
-  border-width: 5px;
-}
-
-#converse {
-  position: absolute;
-
-  width: 550px;
-
-  height: 600px;
-
-  left: 350px;
-
-  top: 20px;
-
-  background: #ffffff;
-
-  border-radius: 5px;
-
-  border-style: solid;
-
-  border-width: 5px;
-}
-
-.convo {
-  background: #cacaca;
-
-  width: 300px;
-
-  font-size: 20px;
-
-  height: 40px;
-
-  left: 400px;
-
-  border-radius: 5px;
-}
-
-.recMessage {
-  position: absolute;
-
-  width: 140px;
-
-  height: 55px;
-
-  left: 295px;
-
-  font-size: 20px;
-
-  top: 175px;
-
-  background: #c73333;
-
-  border-radius: 7.5px;
-}
+/* styling for sent messages in active conversation */
 .sentMessage {
   width: 200px;
+
+  padding: 20px 0px 0px 5px;
 
   height: 55px;
 
@@ -160,6 +97,17 @@
 
   border-radius: 7.5px;
 }
+
+#messagebar {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  height: 20px;
+  width: 300px;
+}
+
+/* Messages page specific styling ends here */
+
 
 #messagebar {
   position: absolute;
