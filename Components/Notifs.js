@@ -1,12 +1,5 @@
 import React from "react";
 import {
-  FaHome,
-  FaBell,
-  FaEnvelope,
-  FaUser,
-  FaCog,
-  FaBookmark,
-  FaEllipsisH,
   FaShare,
   FaHeart,
 } from "react-icons/fa";
@@ -14,6 +7,7 @@ import {
 export default function Notifs() {
   return (
     <div id="notifs">
+      <Drawer />
       <h2>Notifications</h2>
       <p class='notif'> <FaShare style={{color: 'Green'}}/> <strong>BigKirbyFan</strong> shared your post!</p>
       <p class='notif'> <FaHeart style={{color: 'Red'}} /><strong>@BigKirbyFan</strong> liked your post!</p>
