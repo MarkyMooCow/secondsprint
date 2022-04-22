@@ -47,8 +47,8 @@ function Login() {
           onClick={() => {
             setUsername("");
             setPassword("");
+            routeChange();
           }}
-          onClick={routeChange}
         >
           Submit
         </button>
