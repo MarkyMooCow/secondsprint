@@ -58,3 +58,19 @@ function Login() {
 }
 
 export default Login;
+
+#myHead5 {
+  position: absolute;
+
+  width: 434px;
+
+  height: 1080px;
+
+  left: 600px;
+
+  right: 500px;
+
+  top: 100px;
+
+  background-color:rgba(255,0,0,0.3);
+}
