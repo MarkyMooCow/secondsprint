@@ -3,7 +3,7 @@ import {
   FaShare,
   FaHeart,
 } from "react-icons/fa";
-import Drawer from "./Drawer
+import Drawer from "./Drawer";
 
 export default function Notifs() {
   return (
