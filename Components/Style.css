@@ -1,5 +1,5 @@
-/* Styling for login screen */
-
+/* Sign In page specific styling starts here */
+/* the box it is in */
 .SignInBox {
   position: absolute;
   height: 50vh;
@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: hsl(0, 63%, 57%, 0.6);
+  background-color: rgba(214, 76, 76, 0.6);
   border-radius: 5px;
   color: white;
 }
@@ -31,17 +31,19 @@
   grid-area: header;
   margin: 10px;
 }
-
+/* styling for password form label */
 .SignInForm > label[for="username"] {
   grid-area: username_label;
   margin: 10px;
 }
 
+/* styling for password form label */
 .SignInForm > label[for="password"] {
   grid-area: password_label;
   margin: 10px;
 }
 
+/* styling for username input form */
 .SignInForm > input[name="username"] {
   grid-area: username_input;
   width: 80%;
@@ -49,6 +51,7 @@
   margin: 10px;
 }
 
+/* styling for password input form */
 .SignInForm > input[name="password"] {
   grid-area: password_input;
   width: 80%;
@@ -56,12 +59,12 @@
   margin: 10px;
 }
 
+/* styling for submit button */
 .SignInForm > button {
   grid-area: submit_button;
   border-radius: 5px;
 }
-
-/* login screen styling ends here */
+/* Sign In page specific styling ends here */
 
 
 #login {
@@ -80,46 +83,51 @@
   background: #d64d4d;
 }
 
-#messages {
-  position: absolute;
-
-  width: 434px;
-
-  height: 600px;
-
-  left: 1000px;
-
-  top: 20px;
-
-  background: #ffffff;
-
-  border-style: solid;
-
-  border-width: 5px;
-}
-
+/* Conversations window */
 #converse {
   position: absolute;
 
   width: 550px;
 
-  height: 600px;
+  height: 664px;
 
-  left: 350px;
+  left: 178px;
 
-  top: 20px;
-
-  background: #ffffff;
+  background: rgba(214, 76, 76, 0.5);
 
   border-radius: 5px;
 
-  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
 
   border-width: 5px;
 }
-
+#converse > h2 {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  font-size: 34px;
+}
+/* represents profile pic of each profile in coversations */
+.profile1 {
+  color: blue;
+}
+.profile2 {
+  color: purple;
+}
+.profile3 {
+  color: pink;
+}
+.profile4 {
+  color: blanchedalmond;
+}
+.profile5 {
+  color: green;
+}
+/* styling for each conversation in conversations */
 .convo {
-  background: #cacaca;
+  background: rgba(202, 202, 202, 0.5);
+
+  color: rgba(0, 0, 0, 0.5);
 
   width: 300px;
 
@@ -130,27 +138,61 @@
   left: 400px;
 
   border-radius: 5px;
+
+  padding: 10px 0px 0px 5px;
 }
 
-.recMessage {
+/* active conversation messages */
+#messages {
   position: absolute;
 
-  width: 140px;
+  width: 600px;
+
+  height: 640px;
+
+  left: 700px;
+
+  top: 10px;
+
+  background: rgba(214, 76, 76, 0.8);
+
+  border-style: solid;
+
+  border-radius: 5px;
+}
+#messages > h2 {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  font-size: 34px;
+}
+
+/* styling for received messages in active conversation */
+.recMessage {
+  position: relative;
+
+  padding: 20px 0px 0px 5px;
+
+  width: 232px;
 
   height: 55px;
 
-  left: 295px;
+  left: 364px;
 
   font-size: 20px;
 
   top: 175px;
 
-  background: #c73333;
+  background: #e6e20f;
 
   border-radius: 7.5px;
 }
+
+/* styling for sent messages in active conversation */
 .sentMessage {
   width: 200px;
+
+  padding: 20px 0px 0px 5px;
 
   height: 55px;
 
@@ -161,13 +203,17 @@
   border-radius: 7.5px;
 }
 
+/* message bar to send a message */
 #messagebar {
   position: absolute;
   bottom: 0px;
-  left: 70px;
+  left: 24px;
   height: 20px;
-  width: 300px;
+  width: 542px;
+  border-radius: 5px;
 }
+
+/* Messages page specific styling ends here */
 
 #notifs {
   position: absolute;
