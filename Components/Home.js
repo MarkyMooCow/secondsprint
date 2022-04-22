@@ -1,12 +1,5 @@
 import React from "react";
 import {
-  FaHome,
-  FaBell,
-  FaEnvelope,
-  FaUser,
-  FaCog,
-  FaBookmark,
-  FaEllipsisH,
   FaHeart,
   FaCommentDots,
   FaShare,
