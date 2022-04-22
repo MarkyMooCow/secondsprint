@@ -66,6 +66,269 @@
 }
 /* Sign In page specific styling ends here */
 
+/* Messages page specific styling starts here */
+
+/* Conversations window */
+#converse {
+  position: absolute;
+
+  width: 550px;
+
+  height: 664px;
+
+  left: 178px;
+
+  background: rgba(214, 76, 76, 0.5);
+
+  border-radius: 5px;
+
+  border-color: rgba(0, 0, 0, 1);
+
+  border-width: 5px;
+}
+#converse > h2 {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  font-size: 34px;
+}
+/* represents profile pic of each profile in coversations */
+.profile1 {
+  color: blue;
+}
+.profile2 {
+  color: purple;
+}
+.profile3 {
+  color: pink;
+}
+.profile4 {
+  color: blanchedalmond;
+}
+.profile5 {
+  color: green;
+}
+/* styling for each conversation in conversations */
+.convo {
+  background: rgba(202, 202, 202, 0.5);
+
+  color: rgba(0, 0, 0, 0.5);
+
+  width: 300px;
+
+  font-size: 20px;
+
+  height: 40px;
+
+  left: 400px;
+
+  border-radius: 5px;
+
+  padding: 10px 0px 0px 5px;
+}
+
+/* active conversation messages */
+#messages {
+  position: absolute;
+
+  width: 600px;
+
+  height: 640px;
+
+  left: 700px;
+
+  top: 10px;
+
+  background: rgba(214, 76, 76, 0.8);
+
+  border-style: solid;
+
+  border-radius: 5px;
+}
+#messages > h2 {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  font-size: 34px;
+}
+
+/* styling for received messages in active conversation */
+.recMessage {
+  position: relative;
+
+  padding: 20px 0px 0px 5px;
+
+  width: 232px;
+
+  height: 55px;
+
+  left: 364px;
+
+  font-size: 20px;
+
+  top: 175px;
+
+  background: #e6e20f;
+
+  border-radius: 7.5px;
+}
+
+/* styling for sent messages in active conversation */
+.sentMessage {
+  width: 200px;
+
+  padding: 20px 0px 0px 5px;
+
+  height: 55px;
+
+  font-size: 20px;
+
+  background: #61dafb;
+
+  border-radius: 7.5px;
+}
+/* message bar to send a message */
+#messagebar {
+  position: absolute;
+  bottom: 0px;
+  left: 24px;
+  height: 20px;
+  width: 542px;
+  border-radius: 5px;
+}
+
+/* Messages page specific styling ends here */
+
+.CenterBox {
+  background: #d64d4d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  height: 75%;
+  width: 300px;
+}
+
+/* homepage styling starts here */
+#myHead5 {
+  position: absolute;
+
+  width: 434px;
+
+  height: 200px;
+
+  left: 600px;
+
+  right: 500px;
+
+  top: 50px;
+
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* styling for grid box */
+.item1 {
+  grid-area: Banner;
+  background-image: url("./logo512.png");
+}
+.item2 {
+  grid-area: Bio;
+}
+.item3 {
+  grid-area: Favorite;
+}
+.item4 {
+  grid-area: Post;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "Banner Banner"
+    "Banner Banner"
+    "Bio Post"
+    "Favorite Post"
+    "Favorite Post";
+  gap: 10px;
+  background-color: #c72828;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(243, 241, 241, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* homepage styling end */
+/* Sign In page specific styling starts here */
+/* the box it is in */
+.SignInBox {
+  position: absolute;
+  height: 50vh;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(214, 76, 76, 0.6);
+  border-radius: 5px;
+  color: white;
+}
+
+.SignInForm {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% min-content min-content min-content;
+  grid-template-areas:
+    "header header"
+    "username_label username_input"
+    "password_label password_input"
+    "submit_button submit_button";
+}
+
+.SignInForm > h1 {
+  grid-area: header;
+  margin: 10px;
+}
+/* styling for password form label */
+.SignInForm > label[for="username"] {
+  grid-area: username_label;
+  margin: 10px;
+}
+
+/* styling for password form label */
+.SignInForm > label[for="password"] {
+  grid-area: password_label;
+  margin: 10px;
+}
+
+/* styling for username input form */
+.SignInForm > input[name="username"] {
+  grid-area: username_input;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* styling for password input form */
+.SignInForm > input[name="password"] {
+  grid-area: password_input;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* styling for submit button */
+.SignInForm > button {
+  grid-area: submit_button;
+  border-radius: 5px;
+}
+/* Sign In page specific styling ends here */
 
 #login {
   position: absolute;
@@ -214,17 +477,18 @@
 }
 
 /* Messages page specific styling ends here */
-
+/*notifs styling starts here */
+/* notifications block */
 #notifs {
   position: absolute;
 
-  background-color: white;
+  background-color: rgba(255, 0, 0, 0.3);
 
   border-style: solid;
 
   border-width: 2px;
 
-  width: 1100px;
+  width: 60vw;
 
   height: 600px;
 
@@ -232,8 +496,10 @@
 
   top: 20px;
 }
-
+/* separate notifications */
 .notif {
+  position: static;
+
   background: #cacaca;
 
   width: 500px;
@@ -244,8 +510,11 @@
 
   left: 400px;
 
+  top: 500px;
+
   border-radius: 5px;
 }
+
 #myHead5 {
   position: absolute;
 
@@ -259,12 +528,12 @@
 
   top: 100px;
 
-  background-color:rgba(255,0,0,0.3);
+  background-color: rgba(255, 0, 0, 0.3);
 }
 /* styling for grid box */
 .item1 {
   grid-area: Banner;
-  background-image: url("./logo512.png");
+  background-image: url("./banner.png");
 }
 .item2 {
   grid-area: Bio;
@@ -275,7 +544,6 @@
 .item4 {
   grid-area: Post;
 }
-
 
 .grid-container {
   display: grid;
@@ -293,6 +561,7 @@
 .grid-container > div {
   background-color: rgba(243, 241, 241, 0.8);
   text-align: center;
+
   padding: 20px 0;
   font-size: 30px;
 }
